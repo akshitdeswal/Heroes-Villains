@@ -18,7 +18,7 @@ class PersonTest {
         moves.add("element of surprise");
         person = new Person("Akshit", "Deswal", 90, LocalDate.of(2001, 8, 13), moves) {
             @Override
-            int getRank() {
+            int getRank(int strength) {
                 return 0;
             }
         };

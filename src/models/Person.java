@@ -21,7 +21,7 @@ public abstract class Person {
     /*
         abstract method
      */
-    abstract int getRank();
+    abstract int getRank(int strength);
     //setter and getter methods with validations.
     public void setFirstName(String firstName) {
         if (firstName.matches("[A-Z][a-z]*")) {
