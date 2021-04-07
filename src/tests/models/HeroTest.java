@@ -17,10 +17,7 @@ class HeroTest {
         moves.add("stealth moves");
         moves.add("element of surprise");
         hero = new Hero("Akshit", "Deswal", "Akhit Deswal", 90, LocalDate.of(2001, 8, 13), moves) {
-            @Override
-            int getRank(int strength) {
-                return 0;
-            }
+
         };
         hero.setSpecialMoves(moves);
     }

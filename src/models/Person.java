@@ -19,9 +19,12 @@ public abstract class Person {
         setSpecialMoves(specialMoves);
     }
     /*
-        abstract method
+        rank method
      */
-    abstract int getRank(int strength);
+    public int getRank(int strength){
+        //get the rank taking strength as marks.
+        return 0;
+    }
     //setter and getter methods with validations.
     public void setFirstName(String firstName) {
         if (firstName.matches("[A-Z][a-z]*")) {

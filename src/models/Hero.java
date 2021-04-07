@@ -51,9 +51,5 @@ public class Hero extends Person{
     }
 
 
-    @Override
-    int getRank(int strength) {
-        //on the basses of there Strength their rank will be decided.
-        return 0;
-    }
+
 }
