@@ -21,10 +21,10 @@ public class Villains extends Person{
     }
 
     public void setLethalWeapon(String lethalWeapon) {
-        if (lethalWeapon.matches("[A-Z][a-z]*") && lethalWeapon.length()>=2)
+        if (lethalWeapon.length()>=2)
         this.lethalWeapon = lethalWeapon;
         else
-            throw new IllegalArgumentException("please start weapon Name with capital letter and it should contain at least two letters");
+            throw new IllegalArgumentException("it should contain at least two letters");
     }
 
     public String getEvilPurpose() {
