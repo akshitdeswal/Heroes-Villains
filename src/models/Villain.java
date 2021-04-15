@@ -1,13 +1,12 @@
 package models;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
 
 public class Villain extends Person{
 
     private String evilPurpose, lethalWeapon;
 
-    public Villain(String firstName, String lastName, int strength, LocalDate birthday, ArrayList<String> specialMoves, String evilPurpose, String lethalWeapon) {
+    public Villain(String firstName, String lastName, int strength, LocalDate birthday, String evilPurpose, String lethalWeapon) {
         super(firstName, lastName, strength, birthday);
         setEvilPurpose(evilPurpose);
         setLethalWeapon(lethalWeapon);

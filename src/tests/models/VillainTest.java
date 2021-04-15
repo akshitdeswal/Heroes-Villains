@@ -16,7 +16,7 @@ class VillainTest {
         ArrayList<String> moves = new ArrayList<>();
         moves.add("strong stone");
         moves.add("soul stones");
-        villain= new Villain("Thinos", "Gmaro", 95, LocalDate.of(2002,8,7),moves, "Balancing the population", "Infinitystones");
+        villain= new Villain("Thinos", "Gmaro", 95, LocalDate.of(2002,8,7), "Balancing the population", "Infinitystones");
     }
 
     @Test

@@ -31,10 +31,11 @@ public class MainViewController implements Initializable {
 
         try {
             heroListView.getItems().addAll(DBUtility.getHeroList());
+            villainListView.getItems().addAll(DBUtility.getVillainList());
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
-//        villainListView.getItems().addAll(DBUtility.getVillainList());
+
     }
 
 
