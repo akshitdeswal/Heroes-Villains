@@ -108,4 +108,84 @@ public class DBUtility {
         }
         return villains;
     }
+
+    public static void insertVillianIntoDB(Villain newVillain) throws SQLException {
+
+
+        Connection connection = null;
+        PreparedStatement statement = null;
+        ResultSet resultSet = null;
+
+        try{
+
+            connection = DriverManager.getConnection(connString,user,password);
+
+
+            statement = connection.prepareStatement("INSERT INTO villains (firstName, lastName, strength, birthday, evilPurpose, lethalWeapon) VALUES " +
+                    "(?,?,?,?,?,?)");
+
+
+            statement.setString(1, newVillain.getFirstName());
+            statement.setString(2, newVillain.getLastName());
+            statement.setInt(3,newVillain.getStrength());
+            statement.setDate(4, Date.valueOf(newVillain.getBirthday()));
+            statement.setString(5, newVillain.getEvilPurpose());
+            statement.setString(6, newVillain.getLethalWeapon());
+
+
+            statement.executeUpdate();
+
+        }catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+        finally {
+            if (connection != null)
+                connection.close();
+            if (statement != null)
+                statement.close();
+            if (resultSet != null)
+                resultSet.close();
+
+        }
+    }
+    public static void insertHeroIntoDB(Hero newHero) throws SQLException {
+
+
+        Connection connection = null;
+        PreparedStatement statement = null;
+        ResultSet resultSet = null;
+
+        try{
+
+            connection = DriverManager.getConnection(connString,user,password);
+
+
+            statement = connection.prepareStatement("INSERT INTO heroes (firstName, lastName, realName, strength, birthday) VALUES " +
+                    "(?,?,?,?,?)");
+
+
+            statement.setString(1, newHero.getFirstName());
+            statement.setString(2, newHero.getLastName());
+            statement.setString(3, newHero.getRealName());
+            statement.setInt(4,newHero.getStrength());
+            statement.setDate(5, Date.valueOf(newHero.getBirthday()));
+
+
+            statement.executeUpdate();
+
+        }catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+        finally {
+            if (connection != null)
+                connection.close();
+            if (statement != null)
+                statement.close();
+            if (resultSet != null)
+                resultSet.close();
+
+        }
+    }
 }

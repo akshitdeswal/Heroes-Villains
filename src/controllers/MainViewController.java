@@ -56,6 +56,17 @@ public class MainViewController implements Initializable {
         stage.setTitle("Create a New Warrior");
         stage.show();
     }
+    @FXML
+    private void createNewVillainButton(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("../views/createVillain.fxml"));
+        Scene scene = new Scene(root);
+
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+
+        stage.setScene(scene);
+        stage.setTitle("Create a Destroyer");
+        stage.show();
+    }
 
 
 

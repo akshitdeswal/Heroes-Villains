@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainViewController">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainViewController">
    <children>
       <VBox>
          <children>
@@ -46,15 +46,15 @@
                   <VBox spacing="20.0">
                      <children>
                         <Label fx:id="heroLabel" text="Heroes" />
-                        <ListView fx:id="heroListView" prefHeight="324.0" prefWidth="238.0" />
-                        <Button mnemonicParsing="false" onAction="#createNewHeroButton" text="Create your own Hero" />
+                        <ListView fx:id="heroListView" prefHeight="324.0" prefWidth="238.0" style="-fx-background-color: linear-gradient(from 10px 10px to 600px 600px, white, red);;" />
+                        <Button mnemonicParsing="false" onAction="#createNewHeroButton" style="-fx-background-color: linear-gradient(from 10px 10px to 600px 600px, white, red);;" text="Create your own Hero" />
                      </children>
                   </VBox>
                   <VBox spacing="20.0" GridPane.columnIndex="2">
                      <children>
                         <Label fx:id="villainLabel" text="Villains" />
-                        <ListView fx:id="villainListView" prefHeight="324.0" prefWidth="238.0" />
-                        <Button mnemonicParsing="false" text="Create your own Villain" />
+                        <ListView fx:id="villainListView" prefHeight="324.0" prefWidth="238.0" style="-fx-background-color: linear-gradient(from 10px 10px to 600px 600px, white, red);;" />
+                        <Button mnemonicParsing="false" onAction="#createNewVillainButton" style="-fx-background-color: linear-gradient(from 10px 10px to 600px 600px, white, red);;" text="Create your own Villain" />
                      </children>
                   </VBox>
                </children>
