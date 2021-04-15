@@ -11,12 +11,12 @@ public abstract class Person {
     private ArrayList<String> specialMoves;
 
 // constructor with five parameters.
-    public Person(String firstName, String lastName, int strength, LocalDate birthday, ArrayList<String> specialMoves) {
+    public Person(String firstName, String lastName, int strength, LocalDate birthday) {
         setFirstName(firstName);
         setLastName(lastName);
         setStrength(strength);
         setBirthday(birthday);
-        setSpecialMoves(specialMoves);
+
     }
     /*
         rank method
@@ -96,5 +96,10 @@ public abstract class Person {
 
     public ArrayList<String> getSpecialMoves() {
         return specialMoves;
+    }
+
+    public String toString()
+    {
+        return String.format("%s %s age: %d years, strenght: %d", firstName, lastName, getAge(), strength);
     }
 }

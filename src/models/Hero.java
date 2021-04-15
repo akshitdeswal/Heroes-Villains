@@ -2,10 +2,7 @@ package models;
 
 import utilities.DBUtility;
 
-import java.lang.reflect.Array;
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.TreeMap;
 
 public class Hero extends Person{
@@ -13,8 +10,8 @@ public class Hero extends Person{
     private  String realName;
     private TreeMap<String, String> movies;
 
-    public Hero(String firstName, String lastName,String realName, int strength, LocalDate birthday, ArrayList<String> specialMoves) {
-        super(firstName, lastName, strength, birthday, specialMoves);
+    public Hero(String firstName, String lastName, String realName, int strength, LocalDate birthday) {
+        super(firstName, lastName, strength, birthday);
         setRealName(realName);
         movies = new TreeMap<>();
     }

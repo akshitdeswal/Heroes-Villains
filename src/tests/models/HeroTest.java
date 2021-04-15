@@ -16,7 +16,7 @@ class HeroTest {
         ArrayList<String> moves = new ArrayList<>();
         moves.add("stealth moves");
         moves.add("element of surprise");
-        hero = new Hero("Akshit", "Deswal", "Akhit Deswal", 90, LocalDate.of(2001, 8, 13), moves) {
+        hero = new Hero("Akshit", "Deswal", "Akhit Deswal", 90, LocalDate.of(2001, 8, 13)) {
 
         };
         hero.setSpecialMoves(moves);

@@ -8,7 +8,7 @@ public class Villain extends Person{
     private String evilPurpose, lethalWeapon;
 
     public Villain(String firstName, String lastName, int strength, LocalDate birthday, ArrayList<String> specialMoves, String evilPurpose, String lethalWeapon) {
-        super(firstName, lastName, strength, birthday, specialMoves);
+        super(firstName, lastName, strength, birthday);
         setEvilPurpose(evilPurpose);
         setLethalWeapon(lethalWeapon);
     }

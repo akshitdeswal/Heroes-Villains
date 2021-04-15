@@ -16,7 +16,7 @@ class PersonTest {
         ArrayList<String> moves = new ArrayList<>();
         moves.add("stealth moves");
         moves.add("element of surprise");
-        person = new Person("Akshit", "Deswal", 90, LocalDate.of(2001, 8, 13), moves) {
+        person = new Person("Akshit", "Deswal", 90, LocalDate.of(2001, 8, 13)) {
 
         };
         person.setSpecialMoves(moves);
