@@ -47,7 +47,7 @@
                      <children>
                         <Label fx:id="heroLabel" text="Heroes" />
                         <ListView fx:id="heroListView" prefHeight="324.0" prefWidth="238.0" />
-                        <Button mnemonicParsing="false" text="Create your own Hero" />
+                        <Button mnemonicParsing="false" onAction="#createNewHeroButton" text="Create your own Hero" />
                      </children>
                   </VBox>
                   <VBox spacing="20.0" GridPane.columnIndex="2">
