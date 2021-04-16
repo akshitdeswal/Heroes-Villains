@@ -58,6 +58,7 @@ public class CreateVillianController {
             {
                 messageLabel.setText(e.getMessage());
             }
+            //to clear the text from the text feild once the villain is created.
             firstNameTextField.clear();
             lastNameTextField.clear();
             strengthTextField.clear();

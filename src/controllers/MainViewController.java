@@ -36,7 +36,7 @@ public class MainViewController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
+//try and catch block for exception handling.
         try {
             heroListView.getItems().addAll(DBUtility.getHeroList());
             villainListView.getItems().addAll(DBUtility.getVillainList());
