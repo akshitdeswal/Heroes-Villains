@@ -33,18 +33,18 @@ public class Hero extends Person{
         return movies;
     }
 
-    public void addMovie(String actorName, String movie){
-        if (!DBUtility.existingName((actorName)))
+    public void addMovie(String realName, String movie){
+        if (!DBUtility.existingName((realName)))
             throw new IllegalArgumentException("actor name not found");
         else{
-            movies.put(actorName, movie);
+            movies.put(realName, movie);
         }
     }
-    public String getMovieFromActorName(String actorName){
-        if (movies.get(actorName) == null){
+    public String getMovieFromActorName(String realName){
+        if (movies.get(realName) == null){
             return "Default";
         }
-        return movies.get(actorName);
+        return movies.get(realName);
     }
 
 

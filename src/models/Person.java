@@ -10,7 +10,7 @@ public abstract class Person {
     private LocalDate birthday;
     private ArrayList<String> specialMoves;
 
-// constructor with five parameters.
+// constructor with four parameters.
     public Person(String firstName, String lastName, int strength, LocalDate birthday) {
         setFirstName(firstName);
         setLastName(lastName);

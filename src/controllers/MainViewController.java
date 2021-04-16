@@ -40,6 +40,8 @@ public class MainViewController implements Initializable {
         try {
             heroListView.getItems().addAll(DBUtility.getHeroList());
             villainListView.getItems().addAll(DBUtility.getVillainList());
+            heroLabel.setText(String.format("Heroes: %d",heroListView.getItems().size()));
+            villainLabel.setText(String.format("Villain: %d",villainListView.getItems().size()));
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
